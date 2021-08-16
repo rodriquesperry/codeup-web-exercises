@@ -1,5 +1,4 @@
 "use strict";
-
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -12,7 +11,7 @@
 function sayHello(name) {
     return 'Hello, ' + name + '!';
 }
-
+console.log(sayHello("Codeup"));
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -70,7 +69,6 @@ function calcualteTip(bill, percent) {
     let tip = bill * percent;
     return tip;
 }
-
 console.log(calcualteTip(.25, 25.50));
 /**
  * TODO:

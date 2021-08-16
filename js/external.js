@@ -30,5 +30,6 @@ let premMem = confirm("Are you a premium member?");
 
 let notExpired = true;
 
-let productOffer = (nonMem >= 3 && notExpired) || premMem === true ? alert("You qualify for a product offer") : alert("Become a premium member for instant discounts or buy " +(3 - nonMem)+ " more items");
+let productOffer = (nonMem >= 3 && notExpired) || premMem === true ? alert("You qualify for a product offer") :
+    alert("Become a premium member for instant discounts or buy " +(3 - nonMem)+ " more items");
 
