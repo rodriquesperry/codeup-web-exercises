@@ -17,13 +17,13 @@ for (let i = 1; i < 10; i++ ) {
 }
 
 
-// function pyramid() {
-//     for (let i = 1; i < 10; i++) {
-//         console.log(i.toString().repeat(i));
-//     }
-// }
-// pyramid();
-//
+function pyramid() {
+    for (let i = 1; i < 10; i++) {
+        console.log(i.toString().repeat(i));
+    }
+}
+pyramid();
+
 // for (let i = 100; i >= 0; i--) {
 //     if (i % 5 === 0) {
 //         console.log(i);
