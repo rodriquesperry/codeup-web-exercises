@@ -153,9 +153,18 @@ let wouldLike = confirm("Would you like to enter a number?");
 
 if (wouldLike) {
     let numberChosen = prompt("What number would you like to use?");
+    if (numberChosen % 2 === 0) {
+        alert("Your number is an even number.");
+    } else {
+        alert("Your number is an odd number");
+    }
+    alert("Your number plus 100 is: " + (parseInt(numberChosen) + 100));
 
-
-
+    if (numberChosen >= 0) {
+        alert("Your number is a positive number.")
+    } else {
+        alert("Your number is a negative number.");
+    }
 }
 
 
