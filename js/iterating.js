@@ -9,8 +9,8 @@
     let names = ["Timothy", "Jacob", "John", "Mark"];
     /**
      * TODO:
-     * Create a log statement that will log the number of elements in the names
-     * array.
+     * Create a lo
+     * .
      */
     console.log(names.length);
     console.log("--------------------");
@@ -19,11 +19,11 @@
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-    // console.log(names[0]);
-    // console.log(names[1]);
-    // console.log(names[2]);
-    // console.log(names[3]);
-    // console.log("--------------------");
+    console.log(names[0]);
+    console.log(names[1]);
+    console.log(names[2]);
+    console.log(names[3]);
+    console.log("--------------------");
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
