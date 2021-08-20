@@ -44,7 +44,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-// analyzeColor(randomColor);
+analyzeColor(randomColor);
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
@@ -113,7 +113,7 @@ function calculateTotal(luckyNumber, billAmount) {
     } else if (luckyNumber === 1) {
         discount = billAmount * .1;
     } else {
-        discount = discount;
+        discount = 0;
     }
 
     return billAmount - discount;
@@ -153,18 +153,27 @@ let wouldLike = confirm("Would you like to enter a number?");
 
 if (wouldLike) {
     let numberChosen = prompt("What number would you like to use?");
-    if (numberChosen % 2 === 0) {
-        alert("Your number is an even number.");
-    } else {
-        alert("Your number is an odd number");
-    }
-    alert("Your number plus 100 is: " + (parseInt(numberChosen) + 100));
 
-    if (numberChosen >= 0) {
-        alert("Your number is a positive number.")
+    if (isNaN(numberChosen)) {
+        alert("You have not entered a number.");
     } else {
-        alert("Your number is a negative number.");
+        if (numberChosen % 2 === 0) {
+            alert(numberChosen + " is an even number.");
+        } else {
+            alert(numberChosen + " is an odd number");
+        }
+        alert(numberChosen + " plus 100 is: " + (parseInt(numberChosen) + 100));
+
+        if (numberChosen > 0) {
+            alert(numberChosen + " is a positive number.")
+        } else if (numberChosen < 0) {
+            alert(numberChosen + " is a negative number.");
+        } else {
+            alert(numberChosen + " is a neutral number.");
+        }
     }
+
+
 }
 
 
