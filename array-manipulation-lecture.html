@@ -29,7 +29,8 @@
 
 
 // ============================= Adding and Removing Elements
-
+// pies[pies.length] = "banana";
+// console.log(pies);
 /*
 
     // The following array methods change the original array value!
@@ -40,7 +41,7 @@
     someArray.push()    = adds new last element
 
  */
-
+//
 // var pies = [
 //     "apple",
 //     "cherry",
@@ -48,17 +49,26 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-// array iteration
-
-// push
-
-// pop
-
-// shift
-
-// unshift
-
+//
+// // array iteration
+//
+// // push
+//
+// pies.push('banana');
+// console.log(pies);
+//
+// // pop
+//
+// pies.pop();
+// console.log(pies);
+//
+// // shift
+// pies.shift();
+// console.log(pies);
+//
+// // unshift
+// pies.unshift("pecan");
+// console.log(pies);
 
 
 // ============================= Slicing
@@ -78,13 +88,19 @@
 //     "cherry",
 //     "key lime",
 //     "huckleberry",
-//     "rhubarb"
+//     "rhubarb",
 // ];
-
+// let somePies = pies.slice(1, pies.length - 1);
+// console.log(somePies);
 
 // ** create a function that takes in an array of pies baked and return the 3 most recently baked pies
 
 
+// const mostRecentPies = (array) => {
+//     //negative 3 starts the slice process at the opposite end and goes three inward
+//     return array.slice(-3);
+// }
+// console.log(mostRecentPies(pies));
 
 
 
@@ -102,11 +118,9 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
+//
 // pies.sort(); // change the original value
-
-
-
+// console.log(pies);
 
 
 // ============================= Reversing
@@ -118,21 +132,22 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-
+//
+// pies.reverse();
+// console.log(pies);
 
 
 // ============================= Split / Join
 
 
 // splitting string into and array
-
+//
 // var names = "Bob Sally Mary";
-//
+// //
 // var namesArr = names.split(" ");
-//
-// var namesString = namesArr.join("");
-//
+// console.log(namesArr);
+// var namesString = namesArr.join(", ");
+// //
 // console.log(namesString);
 
 
@@ -154,6 +169,7 @@
 //     output += bondsArray[i];
 //     output += ", ";
 // }
+// console.log(output);
 //
 // console.log(bondsString);
 
@@ -176,19 +192,22 @@
 
 */
 
-// var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
 
+const cleanPhoneNumbers = phoneNumberString => {
+    let cleanedPhoneNumbers = [];
+    //Split the string into individual phone numbers
+    let phoneNumbersArr = phoneNumberString.split('\n');
+    phoneNumbersArr.forEach(phoneNumber => {
+        //removes the dashes from each phone number.
+        let cleanedPhoneNumber = phoneNumber.split('-').join('');
+        cleanedPhoneNumbers.push(cleanedPhoneNumber);
+    });
 
-
-
-
-
-
-
-
-
-
-
+    return cleanedPhoneNumbers;
+}
+let results = cleanPhoneNumbers(phoneNumbers);
+console.log(results);
 
 
 // ============================= (EXTRA INFO) Splicing Elements

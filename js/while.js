@@ -5,5 +5,7 @@ const multiplyByTwo = num => {
         console.log(num);
     }
 }
-multiplyByTwo(2);
+multiplyByTwo(1);
+
+let rando = Math.floor(Math.random() * 100) +50;
 
