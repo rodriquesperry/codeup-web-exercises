@@ -29,10 +29,10 @@
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-    // for (let i = 0; i < names.length; i++) {
-    //     console.log("This is the name from a for loop: " + names[i]);
-    // }
-    // console.log("--------------------");
+    for (let i = 0; i < names.length; i++) {
+        console.log("This is the name from a for loop: " + names[i]);
+    }
+    console.log("--------------------");
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
