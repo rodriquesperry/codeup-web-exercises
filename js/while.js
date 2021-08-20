@@ -1,6 +1,9 @@
-let i = 0;
 
-while (i % 2 === 0 && i <= 65) {
-    console.log(i);
-    i++;
+const multiplyByTwo = num => {
+    while (num < 65536) {
+        num = num * 2;
+        console.log(num);
+    }
 }
+multiplyByTwo(2);
+
