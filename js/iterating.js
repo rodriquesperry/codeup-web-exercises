@@ -36,9 +36,9 @@
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
-     */
-    // names.forEach(name => console.log("This is a name from a forEach: " + name ));
-    // console.log("--------------------");
+    //  */
+    names.forEach(name => console.log("This is a name from a forEach: " + name ));
+    console.log("--------------------");
 
     /**
      * TODO:
