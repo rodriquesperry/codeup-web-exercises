@@ -7,5 +7,10 @@ const multiplyByTwo = num => {
 }
 multiplyByTwo(1);
 
-let rando = Math.floor(Math.random() * 100) +50;
+do {
+    let amountOfConesToSell = Math.floor(Math.random() * 100) +50;
+
+} while (i < amountOfConesToSell) {
+    let conesBeingSold = Math.floor(Math.random() * 5) + 1;
+}
 

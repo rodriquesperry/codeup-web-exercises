@@ -23,8 +23,8 @@
      * string, and <li> tags around each planet.
      */
 
-    // let stringWithBreaks = planetsArray.join("<br>");
-    // console.log(stringWithBreaks);
+    let stringWithBreaks = planetsArray.join("<br>");
+    console.log(stringWithBreaks);
 
     let stringAsUl = '<ul>' + planetsArray.map((planet) => {
         return '<li>' + planet + '</li>';
