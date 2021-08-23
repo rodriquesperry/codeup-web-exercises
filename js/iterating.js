@@ -9,8 +9,8 @@
     let names = ["Timothy", "Jacob", "John", "Mark"];
     /**
      * TODO:
-     * Create a lo
-     * .
+     * Create a log statement that will log the number of elements in the names
+     * array.
      */
     console.log(names.length);
     console.log("--------------------");
@@ -54,18 +54,19 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
     function first(array) {
-        console.log(array[0]);;
+        return array[0];
     }
 
     function second(array) {
-        console.log(array[1]);;
+        return array[1];
     }
 
     function last(array) {
-        console.log(array[array.length - 1]);;
+        return array[array.length - 1];
     }
-    first([1, 2, 3, 4, 5]);
-    second([1, 2, 3, 4, 5]);
-    last([1, 2, 3, 4, 5]);
+
+    console.log(first([1, 2, 3, 4, 5]));
+    console.log(second([1, 2, 3, 4, 5]));
+    console.log(last([1, 2, 3, 4, 5]));
 
 })();

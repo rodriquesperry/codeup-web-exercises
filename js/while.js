@@ -7,6 +7,7 @@ const multiplyByTwo = num => {
 }
 multiplyByTwo(1);
 
+
 do {
     let amountOfConesToSell = Math.floor(Math.random() * 100) +50;
 
