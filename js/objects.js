@@ -91,11 +91,6 @@
     });
 
 
-
-
-
-
-
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -108,6 +103,43 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    let books = [
+        {
+            title: "The Four Hour Work Week",
+            author: {
+                firstName: "Timothy",
+                lastName: "Ferris"
+            }
+        },
+        {
+            title: "The Millionaire Messenger",
+            author: {
+                firstName: "Brendon",
+                lastName: "Burchard"
+            }
+        },
+        {
+            title: "Nothing in This Book is True, But it's Exactly How Things Are.",
+            author: {
+                firstName: "Bob",
+                lastName: "Frissell"
+            }
+        },
+        {
+            title: "9 Keys to Successful Leadership",
+            author: {
+                firstName: "James",
+                lastName: "Merritt"
+            }
+        },
+        {
+            title: "First Intelligence",
+            author: {
+                firstName: "Simone",
+                lastName: "Wright"
+            }
+        }
+    ]
 
     /**
      * TODO:
@@ -133,7 +165,11 @@
      *      ---
      *      ...
      */
-
+    for (let i = 0; i < books.length; i++) {
+        console.log([i]);
+        console.log(books[i].title);
+        console.log(books[i].author.firstName + " " + books[i].author.lastName);
+    }
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
