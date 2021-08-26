@@ -80,12 +80,12 @@
     shoppers.forEach(function(shopper) {
             if (shopper.amount >= 200) {
                 let discount = shopper.amount * .12;
-                console.log("Good evening " + shopper.name + ", Your bill is: " + shopper.amount
-                    + " Your discount to be applied is: " + discount
-                    + ". Your Amount after discount is: "
+                console.log("Good evening " + shopper.name + ", Your bill is: $" + shopper.amount
+                    + " Your discount to be applied is: $" + discount
+                    + ". Your Amount after discount is: $"
                     + (shopper.amount - discount));
             } else {
-                console.log("Good evening " + shopper.name + ", I hope you enjoyed your meal. Your total is: "
+                console.log("Good evening " + shopper.name + ", I hope you enjoyed your meal. Your total is: $"
                     + shopper.amount);
             }
     });
@@ -141,6 +141,10 @@
         }
     ]
 
+    console.log(books[0].title);
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -167,7 +171,7 @@
      */
 
     books.forEach((book, index) => {
-        console.log("Book # " + index);
+        console.log("Book # " + (index + 1));
         console.log("Title: " + book.title);
         console.log("Author: " + book.author.firstName + " " + book.author.lastName);
         console.log("---");
@@ -182,5 +186,30 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    const createBook = (title, authorName) => {
+        // get name array
+        let nameArr = authorName.split(" ")
+        let firstName = authorName[0];
+        let lastName = authorName[1];
+        return {
+            title: title,
+            authorName: {
+            firstName: firstName,
+            lastName: lastName
+        }
+    }
+}
+
+const showBookInfo = book => {
+    console.log("Title: " + book.title);
+    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    console.log("---");
+}
+
+books.forEach(function(book, index) {
+        console.log("Book # " + (index + 1));
+        showBookInfo(book);
+    });
 
 })();
