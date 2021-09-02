@@ -1,9 +1,18 @@
 
+body {
+    background-color: #FFE3FE;
+}
+
 #mainHeading {
     text-align: center;
 }
 
 .fancy-header {
     color: #800080; /* single line comment */
+    text-decoration: underline;
+}
+
+.colorHeader {
+    color: #4CA1A3;
     text-decoration: underline;
 }
