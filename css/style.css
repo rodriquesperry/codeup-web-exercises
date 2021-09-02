@@ -1,8 +1,10 @@
 
 body {
-    /*background-color: #FFE3FE;*/
-    background-image: url("../img/wallpaper2you_255611.jpeg");
+    background-color: #FFE3FE;
     font-family: 'Padauk', sans-serif;
+    background-image: url("../img/wallpaper2you_255611.jpeg");
+    background-position: cover;
+    background-repeat: no-repeat;
 }
 
 #mainHeading {
@@ -25,4 +27,18 @@ ul {
 
 ol {
     list-style: upper-roman;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+
+th {
+  font-size: 2rem;
+}
+
+.tdHeader {
+    font-size: 1.5rem;
 }
