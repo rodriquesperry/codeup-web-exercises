@@ -45,10 +45,12 @@ fieldset {
 
 .form-label {
     /* The text of a label must be bold */
+    font-weight: bold;
 }
 
 .btn-block {
     /* This element should use 100% of the width */
+
 }
 
 .btn {
