@@ -9,36 +9,27 @@ body, html {
 div {
     width: 80%;
     margin: .5em;
-    padding: 8px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .3em;
 }
 
 .message-info {
     background-color: #8cacea;
     color: #191970;
-    border-radius: .3em;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .message-success {
     background-color: #98fb98;
     color: #005700;
-    border-radius: .3em;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .message-warning {
     background-color: #eaea9d;
     color: #a52a2a;
-    border-radius: .3em;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .message-error {
     background-color: #eea0a0;
     color: #700909;
-    border-radius: .3em;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
