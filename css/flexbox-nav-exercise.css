@@ -19,6 +19,10 @@ ul {
     width: 100%;
 }
 
+nav {
+    position: relative;
+}
+
 nav a {
     display: inline-block;
     text-decoration: none;
@@ -34,14 +38,15 @@ nav li a:hover {
 #logo {
     margin-left: auto;
     position: absolute;
-    top: 3%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 #logo a {
     padding: .2em 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 3em;
 
 }
@@ -74,8 +79,8 @@ footer a {
 #footerLogo {
     align-self: flex-end;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 2em;
-    flex-grow: 2;
+    margin-left: 1.5em;
+    flex-grow: 1;
 }
 
 #footerLogo a {
@@ -92,13 +97,12 @@ footer a {
     flex-direction: row;
     flex-grow: 2;
     font-size: 1.2em;
-
 }
 
 #footerLinks div {
     display: flex;
     flex-direction: column;
-    margin: 2em 3em 0;
+    margin: 2em 2em 0;
 }
 
 #footerLinks a {
