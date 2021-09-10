@@ -21,6 +21,7 @@ ul {
 
 nav {
     position: relative;
+    padding: 1em;
 }
 
 nav a {
