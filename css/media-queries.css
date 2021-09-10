@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.alert-info {
+    border: 1px solid #c1c1c1;
+    background-color: #c2ffff;
+    padding: 1rem;
+    width: 80vw;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.alert-info a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    padding: 0 1rem 1rem;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 1em;
+    border: 1px solid #c1c1c1;
+    background-color: #c1c1c1;
+    text-align: center;
+    width: 80vw;
+    padding: 1rem;
+}
+
+img {
+    width: 90vw;
+}
+
+.main {
+    width: 90vw;
+}
+
+.sub-section {
+    width: 90vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+}
+
+#social-media-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#social-media-links i {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (min-width: 576px) {
+    body {
+        display: block;
+    }
+
+    .alert-info {
+        display: none;
+    }
+
+    h1 {
+        width: 40vw;
+        margin-left: 2rem;
+        float: left;
+    }
+
+    nav {
+        display: flex;
+        float: right;
+        width: 50vw;
+    }
+
+    .nav-links {
+        padding: 0;
+        list-style: none;
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    .nav-links li {
+        margin: 0;
+        border: none;
+        background-color: #fff;
+        width: 10%;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95vw;
+        padding-top: 2rem;
+    }
+
+    .main {
+        float: left;
+        width: 60vw;
+        margin-left: 2rem;
+        padding: 2rem 0 15rem;
+    }
+
+    .sub-section {
+        float: right;
+        width: 30vw;
+        margin-right: 2rem;
+        padding: 2rem 0;
+
+    }
+
+    footer {
+        clear: both;
+        margin-left: 2rem;
+    }
+
+    #social-media-links i {
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+
+}
+

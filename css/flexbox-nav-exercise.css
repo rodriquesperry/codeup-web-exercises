@@ -125,12 +125,12 @@ hr {
     padding: 2em;
 }
 
-#footerSocial i {
+.fa {
     margin: 1em;
     font-size: 1.5em;
 }
 
-#footerSocial i:hover {
+.fa:hover {
     cursor: pointer;
     color: #0000ff;
 }
