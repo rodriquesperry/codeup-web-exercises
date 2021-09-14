@@ -68,8 +68,6 @@ footer {
     font-size: 1.5rem;
 }
 
-
-
 @media screen and (min-width: 576px) {
     body {
         display: block;
@@ -81,7 +79,7 @@ footer {
 
     h1 {
         width: 40vw;
-        margin-left: 2rem;
+        margin-left: 2.5rem;
         float: left;
     }
 
@@ -137,7 +135,5 @@ footer {
         margin: 1rem;
         font-size: 2rem;
     }
-
-
 }
 

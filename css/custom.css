@@ -1,0 +1,13 @@
+ .jumbotron {
+    background-image: url("../img/pizza.png");
+}
+
+.welcome {
+    background-color: rgba(228, 221, 235, .4);
+}
+
+.cardHolder {
+    border: 1px solid black;
+}
+
+
