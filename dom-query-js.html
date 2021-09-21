@@ -49,7 +49,10 @@
             if (i % 2 === 1) {
                 listItems[i].style.color = "grey";
             }
-            listItems[0].style.color = "blue";
+            if (listItems[i].getAttribute("data-dbid") === "1") {
+                listItems[i].style.color = "blue";
+            }
+            // listItems[0].style.color = "blue";
         }
 
 
