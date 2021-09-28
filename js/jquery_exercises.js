@@ -3,5 +3,5 @@
 // $(document).ready(() => {
 //    alert("The DOM has finished loading!");
 // });
-$('#main-content');
+alert($('#main-content').text());
 
