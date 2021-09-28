@@ -3,5 +3,5 @@
 // $(document).ready(() => {
 //    alert("The DOM has finished loading!");
 // });
-alert($('#list').html());
+$('.codeup').css('border', '1px solid red');
 
