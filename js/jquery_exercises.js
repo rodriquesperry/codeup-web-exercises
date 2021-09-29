@@ -6,6 +6,8 @@ $('h1').click(() => {
 
 
 $('p').dblclick(() => {
+    //Use $(this).css('font-size', '18px') for multiple paragraphs.
+    // Will only change the one clicked on at a time
     $('p').css('font-size', '18px');
 });
 

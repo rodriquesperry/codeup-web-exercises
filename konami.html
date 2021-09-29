@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<audio src="assets/castlevaniaMusic.mp3" type="audio/mp3"></audio>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="/js/jquery.js"></script>
+<script>
+  "use strict";
+
+  let code = "";
+
+  $(document).keyup(function(event){
+
+    code += event.keyCode;
+
+    if (code === '38384040') {
+      $('body').css({
+        'background-image' : 'url("img/castlevania.png")',
+        'background-repeat' : 'no-repeat',
+        'background-size' : 'cover',
+        'width' : '100%',
+        'height' : '100vh'
+      });
+    }
+
+    if (code === "3838404037393739666513") {
+      $('body').css({
+        'background-image' : 'url("img/castlevania2.png")',
+        'background-repeat' : 'no-repeat',
+        'background-size' : 'cover',
+        });
+      alert('You have added 30 lives!');
+      $('audio')[0].play();
+    }
+
+    console.log(code);
+
+
+  });
+
+
+
+</script>
+</body>
+</html>
