@@ -7,4 +7,14 @@ $('h1').click(() => {
 
 $('p').dblclick(() => {
     $('p').css('font-size', '18px');
-})
+});
+
+$('li').hover(
+    function()  {
+        $(this).css('color', '#ff0000');
+    },
+    function() {
+        $(this).css('color', 'inherit');
+    }
+);
+
