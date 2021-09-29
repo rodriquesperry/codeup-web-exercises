@@ -1,10 +1,5 @@
 "use strict";
 
-// $(document).ready(() => {
-//    alert("The DOM has finished loading!");
-// });
-$('li').css('font-size', '20px');
-
-$('h1, p, li').css('background-color', 'yellow');
-
-alert($('h1').text());
+$('h1').click(() => {
+    $('h1').css('background-color', "#cd9575")
+})
