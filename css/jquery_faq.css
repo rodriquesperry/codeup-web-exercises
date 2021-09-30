@@ -5,3 +5,26 @@
 .highlight {
     background-color: #ffff00;
 }
+
+#frameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.frameHouse {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.frame {
+    height: 175px;
+    width: 100px;
+    border: 5px solid #8b4513;
+    margin: 2rem;
+}
+
+.swap {
+    width: 50px;
+    margin-left: 60px;
+}
