@@ -1,9 +1,16 @@
 "use strict";
 
 
-$('#showMore').click((e) => {
+$('#showMore').click(function(e) {
     e.preventDefault();
+
     $('dd').toggleClass('invisible');
+
+    if ($('dd').hasClass('invisible')) {
+        $('#showMore').html('Show Content');
+    } else {
+        $('#showMore').html('Hide Content');
+    }
 })
 
 $('dt').click(function(e) {
