@@ -1,4 +1,26 @@
+
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+header {
+    font-size: 1.1rem;
+}
+
+#logo {
+    font-size: 2rem;
+}
+
 .nav-item {
+    font-size: 1.1rem;
     margin: -.53rem;
+}
+
+.nav-link {
+    color: #848487;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
 }
 
