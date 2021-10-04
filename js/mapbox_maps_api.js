@@ -15,6 +15,12 @@ var emirils = new mapboxgl.Marker()
     .setLngLat([-115.169750, 36.102300])
     .addTo(map);
 
+var emirilsPopup = new mapboxgl.Popup()
+    .setLngLat([-115.169750, 36.102300])
+    .setHTML("<h5><em>EMERIL’S NEW ORLEANS FISH HOUSE</em></h5>");
+
+emirils.setPopup(emirilsPopup);
+
 let latAndLong = geocode("Las Vegas, Nevada", mapboxApiKey2).then(function(results) {
     console.log(results);
 })
