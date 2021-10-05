@@ -62,7 +62,11 @@ favSpots.forEach(function(marker) {
     let markers = new mapboxgl.Marker()
         .setLngLat(marker.coordinates)
         .addTo(map);
-        markers.on('click', () => {
-            map.flyTo({center: marker.coordinates});
-        })
+
+
+    var favPopup = new mapboxgl.Popup()
+        .setLngLat(marker.coordinates)
+        .setHTML("<h5><em>" + marker.name + "</em></h5>");
+
+        markers.setPopup(favPopup)
 })
