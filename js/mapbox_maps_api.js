@@ -1,4 +1,24 @@
 
+let favSpots = [
+    {
+        name: "EMERIL’S NEW ORLEANS FISH HOUSE",
+        lat: 36.102300,
+        lng: -115.169750
+    },
+    {
+        name: "Chili's Bar and Grill",
+        lat: 29.540340,
+        lng: -98.404660
+
+    },
+    {
+        name: "Home Cooked Meals",
+        lat: 29.601910,
+        lng: -98.265590
+    }
+];
+
+favSpots.for
 
 mapboxgl.accessToken = mapboxApiKey2;
 console.log(mapboxApiKey2);
