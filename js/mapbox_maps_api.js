@@ -1,24 +1,35 @@
 
 let favSpots = [
     {
-        name: "EMERIL’S NEW ORLEANS FISH HOUSE",
-        lat: 36.102300,
-        lng: -115.169750
+        name: "Chama Gaucha Brazilian Steakhouse",
+        coordinates : {
+            lng: -98.497730,
+            lat: 29.610290
+        }
+
     },
     {
         name: "Chili's Bar and Grill",
-        lat: 29.540340,
-        lng: -98.404660
+        coordinates: {
+            lng: -98.404660,
+            lat: 29.540340
+        }
+
+
 
     },
     {
         name: "Home Cooked Meals",
-        lat: 29.601910,
-        lng: -98.265590
+        coordinates: {
+            lng: -98.265590,
+            lat: 29.601910
+        }
+
+
     }
 ];
 
-favSpots.for
+
 
 mapboxgl.accessToken = mapboxApiKey2;
 console.log(mapboxApiKey2);
@@ -26,8 +37,8 @@ console.log(mapboxApiKey2);
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    center: [-115.1492, 36.1663],
-    zoom: 10
+    center: [-98.4936, 29.4241],
+    zoom: 5
 
 })
 
@@ -43,4 +54,15 @@ emirils.setPopup(emirilsPopup);
 
 let latAndLong = geocode("Las Vegas, Nevada", mapboxApiKey2).then(function(results) {
     console.log(results);
+})
+
+favSpots.forEach(function(marker) {
+    console.log(marker.coordinates)
+
+    let markers = new mapboxgl.Marker()
+        .setLngLat(marker.coordinates)
+        .addTo(map);
+        markers.on('click', () => {
+            map.flyTo({center: marker.coordinates});
+        })
 })
