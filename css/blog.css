@@ -20,7 +20,9 @@ header {
     color: #848487;
 }
 
-p {
+p, .badge {
     font-family: 'Oswald', sans-serif;
 }
+
+
 
