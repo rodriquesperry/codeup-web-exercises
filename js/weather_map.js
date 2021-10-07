@@ -1,4 +1,6 @@
 
+
+
 $.get("http://api.openweathermap.org/data/2.5/forecast", {
     APPID: openWeatherKey,
     lat:    29.425171,
@@ -42,7 +44,13 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
 
         $('.container-weather').append(html);
     }
-
-
-
 });
+
+mapboxgl.accessToken = mapboxApiKey2;
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-98.4936, 29.4241],
+    zoom: 5
+})
