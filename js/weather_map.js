@@ -1,6 +1,4 @@
 
-
-
 $.get("http://api.openweathermap.org/data/2.5/forecast", {
     APPID: openWeatherKey,
     lat:    29.425171,
@@ -48,9 +46,23 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
 
 mapboxgl.accessToken = mapboxApiKey2;
 
-var map = new mapboxgl.Map({
+const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-98.4936, 29.4241],
     zoom: 5
 })
+
+const marker = new mapboxgl.Marker({
+    draggable: true
+})
+.setLngLat([-98.494614, 29.425171])
+.addTo(map);
+
+const onDragEnd = () => {
+    const lngLat = marker.getLngLat();
+    return lngLat;
+}
+marker.on('dragend', onDragEnd);
+
+
