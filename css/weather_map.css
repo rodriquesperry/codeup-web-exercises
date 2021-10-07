@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    margin-left: 0rem;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr)
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    margin: .3rem;
+    width: 500px;
+
+}
+
+#icon {
+    margin-left: 3rem;
+}
+
+
+
