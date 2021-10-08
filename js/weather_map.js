@@ -7,8 +7,8 @@ weatherData = {
 }
 function getWeather() {
     $.get("http://api.openweathermap.org/data/2.5/forecast", weatherData).done(function(data) {
-        city = '<h3>' + data.city.name + '</h3>';
-        console.log(data.city)
+        city = '<h5> City: <em>' + data.city.name + '</em></h5>';
+
 
         $('.currCity').append(city);
         for (let i = 0; i < data.list.length; i += 8) {
@@ -59,7 +59,7 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-98.4936, 29.4241],
-    zoom: 5
+    zoom: 12
 })
 
 const marker = new mapboxgl.Marker({
@@ -72,16 +72,34 @@ const onDragEnd = () => {
     lngLat = marker.getLngLat();
     weatherData.lat = lngLat.lat;
     weatherData.lon = lngLat.lng;
-    map.flyTo({center: [lngLat.lng, lngLat.lat], essential: true});
+    map.flyTo({center: [weatherData.lon, weatherData.lat], essential: true});
     console.log(weatherData);
     $('.currCity').empty();
     $('.container-weather').empty();
     getWeather();
     $('.container-weather').scrollTop();
 }
+
+$('.btn').on('click', function(e) {
+    e.preventDefault();
+})
 marker.on('dragend', onDragEnd)
 
-// reverseGeocode()(weatherData, openWeatherKey).then(function (result) {
-//
-// })
+    let searchVal = ""
+    let search = $('#search');
+search.change(function() {
+
+    searchVal = search.val();
+    geocode(searchVal, mapboxApiKey2).then(function (result) {
+        weatherData.lat = result[1];
+        weatherData.lon = result[0];
+        map.flyTo({center: result, essential: true});
+        $('.currCity').empty();
+        $('.container-weather').empty();
+        getWeather();
+        marker.setLngLat(result);
+    })
+    console.log(searchVal)
+    ;
+})
 

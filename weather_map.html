@@ -19,11 +19,16 @@
 <body>
 
     <div class="header">
+        <form action="" class="form-group text-center float-right my-3 mr-5">
+            <input id="search" type="text">
+            <button class="btn btn-outline-primary">Find</button>
+        </form>
         <h1 class="text-center">5 -Day Forcast</h1>
         <div class="currCity text-center"></div>
     </div>
 
     <div class="container container-weather w-100"></div>
+
     <div class="container container-map mt-4">
         <div id="map"></div>
     </div>
@@ -39,7 +44,7 @@
 <!-- Keys link -->
     <script src="keys.js"></script>
 <!-- Mapbox API  -->
-    <script src="js/mapbox-geocoder-utils.js"></script>
+    <script src="js/weather_geocoding.js"></script>
 <!-- Custom JS file -->
     <script src="js/weather_map.js"></script>
 </body>
