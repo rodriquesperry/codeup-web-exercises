@@ -5,6 +5,17 @@ body {
     padding: 0;
 }
 
+.header {
+    display: ;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+h1 {
+
+
+}
+
 .container {
     display: flex;
     grid-template-columns: repeat(5, 1fr)
@@ -17,11 +28,14 @@ body {
     display: flex;
     margin: .3rem;
     width: 500px;
-
+    height: 450px;
 }
 
+
+
 #icon {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
+
 }
 
 .container-map {
@@ -35,9 +49,7 @@ body {
     margin: auto;
 }
 
-#icon {
-    font-size: 2rem;
-}
+
 
 
 
