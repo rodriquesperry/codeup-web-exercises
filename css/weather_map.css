@@ -3,17 +3,34 @@ body {
     margin: 0;
     margin-left: 0rem;
     padding: 0;
+    /*background: rgba(255,255,0);*/
+    /*background: linear-gradient(128deg, rgba(255,255,0,.2) 10%, rgba(255,255,255,1) 100%);*/
 }
 
 .header {
-    display: ;
-    justify-content: space-evenly;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-h1 {
+input {
+    height: 2.6rem;
+    border-radius: 5%;
+    border-color: rgba(102, 51, 153, 1);
+    border-width: .15rem;
+}
 
+.btn {
+    border-width: .15rem;
+    border-color: rgba(102, 51, 153, 1);
+}
 
+.mainHr {
+    width: 19%;
+    float: left;
+    margin-left: 9.6rem;
+    margin-top: 0;
+    background-color: rgba(102, 51, 153, .5);
 }
 
 .container {
@@ -29,18 +46,16 @@ h1 {
     margin: .3rem;
     width: 500px;
     height: 450px;
+    box-shadow: 1px 1px #808080, -.1em 0 .4em rgba(102, 51, 153, 1);
 }
-
-
 
 #icon {
     margin-left: 1.5rem;
-
 }
 
 .container-map {
-    border: 10px solid rebeccapurple;
-    border-radius: 3%;
+    border: 10px solid rgba(102, 51, 153, 1);
+    border-radius: 2%;
 }
 
 #map {

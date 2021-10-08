@@ -7,7 +7,7 @@ weatherData = {
 }
 function getWeather() {
     $.get("http://api.openweathermap.org/data/2.5/forecast", weatherData).done(function(data) {
-        city = '<h5> City: <em>' + data.city.name + '</em></h5>';
+        city = '<h5><strong>City:</strong><em>' + " " + data.city.name + '</em></h5>';
 
 
         $('.currCity').append(city);
