@@ -8,7 +8,6 @@ weatherData = {
 
 function getWeather() {
     $.get("http://api.openweathermap.org/data/2.5/forecast", weatherData).done(function(data) {
-        console.log(data);
         city ='<h5><strong> City:</strong><em>' + " " + data.city.name + '</em></h5>';
 
         $('.currCity').append(city);
@@ -27,7 +26,7 @@ function getWeather() {
             let date = new Date(data.list[i].dt * 1000).toLocaleDateString("en-US");
 
             html = '<div class="card border">'
-                + '<h6 class="card-header text-center text-white">' + date + '</h6>'
+                + '<h5 class="card-header text-center text-white"><strong>' + date + '</strong></h5>'
                 + '<div class="card-body">'
                 + '<h5 class="mb-2 text-center"><strong>' + data.list[i].main.temp_max + "&#8457;" + " / " + data.list[i].main.feels_like + "&#8457;" + '</strong></h5>'
                 + '<div class="mt-3" id="iconBkGrnd">'
@@ -71,7 +70,6 @@ const onDragEnd = () => {
     weatherData.lat = lngLat.lat;
     weatherData.lon = lngLat.lng;
     map.flyTo({center: [weatherData.lon, weatherData.lat], essential: true});
-    console.log(weatherData);
     $('.currCity').empty();
     $('.container-weather').empty();
     getWeather();
@@ -98,7 +96,5 @@ search.change(function() {
         getWeather();
         marker.setLngLat(result);
     })
-    console.log(searchVal)
-    ;
 })
 
