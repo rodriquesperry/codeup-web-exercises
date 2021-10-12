@@ -15,9 +15,12 @@
         firstName: "Rodriques",
         lastName: "Perry"
     };
+    const {firstName, lastName} = person;
+    console.log(firstName);
+    console.log(lastName);
 
-    console.log(person.firstName);
-    console.log(person.lastName);
+    // console.log(person.firstName);
+    // console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using

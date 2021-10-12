@@ -38,7 +38,7 @@ function getWeather() {
                 + '<hr>'
                 + '<p> Wind: <strong>' + wind + '</strong> mph</p>'
                 + '<hr>'
-                + '<p> Pressure: <strong>' + data.list[i].main.pressure + '</strong></p>'
+                + '<p> Pressure: <strong>' + data.list[i].main.pressure + '"</strong></p>'
                 + '</div>'
                 + '</div>';
 
