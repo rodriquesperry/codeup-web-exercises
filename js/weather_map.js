@@ -25,7 +25,7 @@ function getWeather() {
 
             let date = new Date(data.list[i].dt * 1000).toLocaleDateString("en-US");
 
-            html = '<div class="card border">'
+            html = '<div class="card border" style="width: 18rem">'
                 + '<h5 class="card-header text-center text-white"><strong>' + date + '</strong></h5>'
                 + '<div class="card-body">'
                 + '<h5 class="mb-2 text-center"><strong>' + data.list[i].main.temp_max + "&#8457;" + " / " + data.list[i].main.feels_like + "&#8457;" + '</strong></h5>'

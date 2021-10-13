@@ -33,10 +33,9 @@ input {
 }
 
 .card {
-    display: flex;
     margin: .3rem;
-    width: 500px;
-    height: 455px;
+    /*min-width: 300px;*/
+    height: auto;
     box-shadow: 1px 1px #808080, -.1em 0 .4em rgba(102, 51, 153, 1);
 }
 
@@ -56,11 +55,10 @@ input {
 
 .container-weather {
     display: flex;
-    grid-template-columns: repeat(5, 1fr)
-    /*justify-content: center;*/
-    margin: 0;
+    /*grid-template-columns: repeat(5, 1fr);*/
+    justify-content: center;
+    /*margin: 0;*/
     padding: 0;
-    gap: 10px;
 }
 
 .container-map {
@@ -75,7 +73,7 @@ input {
     margin: auto;
 }
 /*Make display responsive when pn med and below screens*/
-@media screen and (max-width: ){
+@media screen and (max-width: 768px ){
 
 }
 
