@@ -31,14 +31,14 @@ const users = [
 ];
 
 // TODO: fill in your name and email and add some programming languages you know
-const me = {
-  name: 'rodriques',
-  email: 'rodriques@codeup.com',
-  languages: ['javascript', 'html', 'css', 'jquery']
-}
-
-users.push(me);
-console.log(users);
+// const me = {
+//   name: 'rodriques',
+//   email: 'rodriques@codeup.com',
+//   languages: ['javascript', 'html', 'css', 'jquery']
+// }
+//
+// users.push(me);
+// console.log(users);
 
 
 // TODO: replace the `var` keyword with `const`, then try to reassign a variable
@@ -62,10 +62,10 @@ let emails = [];
 let names = [];
 
 // TODO: rewrite the following using arrow functions
-users.forEach(function(user) {
+users.forEach(user => {
   return emails.push(user.email);
 });
-users.forEach(function(user) {
+users.forEach(user => {
   return names.push(user.name);
 });
 
