@@ -38,3 +38,6 @@ const users = [
 
 let threeLanguages = users.filter(user => user.languages.length > 2);
 console.log(threeLanguages);
+
+let userEmail = users.map(user => user.email);
+console.log(userEmail);
