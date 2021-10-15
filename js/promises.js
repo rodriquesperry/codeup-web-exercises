@@ -1,9 +1,16 @@
 "use strict";
-const token = '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';
-const username = prompt("Enter your github username.")
-const url = `https://api.github.com/users/${username}/events`;
+function username(name) {
+    const url = `https://api.github.com/users/${name}/events`;
 
-let gitHubAPI = fetch(url, {headers: {'Authorization': token}})
-    .then((results)=> results.json())
-    .then(arrayData => console.log(arrayData[0].created_at));
+    let gitHubAPI = fetch(url, {headers: {'Authorization': gitHubToken}})
+        .then((results)=> results.json())
+        .then(objData => console.log(`Most recent commit is ${objData[0].created_at}`));
+    return gitHubAPI
+}
+
+username('rodriquesperry');
+username('jackiedallas');
+username('maryawhite');
+
+
 
