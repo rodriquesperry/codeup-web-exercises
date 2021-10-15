@@ -12,6 +12,7 @@ console.log("A promise lecture");
 //TODO: add a method that runs if the Promise resolves successfully
 //TODO: add a method that runs if the Promise fails
 //TODO: In the callback function of the .then method, parse the response into JSON
+
 // pokemonAPI.then(function(results){
 //     console.log(results);
 //     //results.text().then((text)=>{console.log(text)});
@@ -54,6 +55,7 @@ console.log("A promise lecture");
 // TODO: Using Promises, make a fetch request to the Star Wars API
 // fetch('https://swapi.dev/api/films')
 // // TODO: Use Promise chaining to console log the json response
+
 //     .then((response)=>{
 //         //console.log(response.json());
 //         return response.json();
