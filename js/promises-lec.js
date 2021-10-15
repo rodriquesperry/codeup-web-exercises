@@ -4,7 +4,7 @@ console.log("A promise lecture");
  *        USING FETCH WITH PROMISES
  ******************************************** */
 
-// var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
+
 // return of fetch request is a Promise object
 
 //TODO: console log the results of the above Promise. What is the result?
@@ -13,6 +13,7 @@ console.log("A promise lecture");
 //TODO: add a method that runs if the Promise fails
 //TODO: In the callback function of the .then method, parse the response into JSON
 
+// var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
 // pokemonAPI.then(function(results){
 //     console.log(results);
 //     //results.text().then((text)=>{console.log(text)});
